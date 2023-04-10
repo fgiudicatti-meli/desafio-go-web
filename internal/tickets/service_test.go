@@ -110,7 +110,7 @@ func TestGetTicketByDestination(t *testing.T) {
 
 	assert.Nil(t, err)
 	assert.True(t, dbMock.spy)
-	assert.Equal(t, len(ticketsByDestination), tkts)
+	assert.Equal(t, len(ticketsByDestination), len(tkts))
 }
 
 func TestGetTotalTickets(t *testing.T) {
